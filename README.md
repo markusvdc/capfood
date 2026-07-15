@@ -70,7 +70,7 @@ Na primeira instalação, todos os alimentos começam selecionados para receber 
 
 1. Instale o Fabric Loader, o Fabric API e o Mod Menu nas versões compatíveis.
 2. Coloque o arquivo `.jar` do CAP FOOD na pasta `mods` da instância.
-3. Abra **Mods → CAP FOOD → Configuração**.
+3. Abra **Mods → CAP FOOD**.
 4. Marque os alimentos desejados e selecione **APLICAR**.
 
 ## Compatibilidade

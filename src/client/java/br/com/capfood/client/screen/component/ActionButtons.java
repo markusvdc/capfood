@@ -13,7 +13,16 @@ public final class ActionButtons {
 	private final HoverOnlyButton applyButton;
 	private final HoverOnlyButton selectAllButton;
 
-	public ActionButtons(int x, int y, int width, Runnable onBack, Runnable onOptions, Runnable onToggleAll, Runnable onApply) {
+	public ActionButtons(
+		int x,
+		int y,
+		int width,
+		Runnable onBack,
+		Runnable onOptions,
+		Runnable onToggleAll,
+		Runnable onApply,
+		boolean silentOptions
+	) {
 		int buttonWidth = (width - GAP * 3) / 4;
 		int applyWidth = width - buttonWidth * 3 - GAP * 3;
 
@@ -21,7 +30,13 @@ public final class ActionButtons {
 			x, y, buttonWidth, 20, Component.translatable("capfood.action.back"), button -> onBack.run()
 		);
 		this.optionsButton = new HoverOnlyButton(
-			x + buttonWidth + GAP, y, buttonWidth, 20, Component.translatable("capfood.action.options"), button -> onOptions.run()
+			x + buttonWidth + GAP,
+			y,
+			buttonWidth,
+			20,
+			Component.translatable("capfood.action.options"),
+			button -> onOptions.run(),
+			silentOptions
 		);
 		this.selectAllButton = new HoverOnlyButton(
 			x + buttonWidth * 2 + GAP * 2,

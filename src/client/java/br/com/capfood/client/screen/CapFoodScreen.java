@@ -42,7 +42,8 @@ public final class CapFoodScreen extends Screen {
 			this::onClose,
 			this::openOptions,
 			this::toggleAllFoods,
-			this::applySelection
+			this::applySelection,
+			false
 		);
 		actionButtons.addTo(this::addRenderableWidget);
 	}

@@ -31,8 +31,12 @@ public final class GlobalOptionEntry extends AbstractButton {
 
 	@Override
 	public void onPress(InputWithModifiers input) {
-		this.selected = !this.selected;
-		this.onValueChange.accept(this.selected);
+		setSelected(!this.selected);
+	}
+
+	public void setSelected(boolean selected) {
+		this.selected = selected;
+		this.onValueChange.accept(selected);
 	}
 
 	@Override

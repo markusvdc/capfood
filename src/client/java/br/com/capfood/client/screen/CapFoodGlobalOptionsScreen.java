@@ -1,10 +1,9 @@
 package br.com.capfood.client.screen;
 
+import br.com.capfood.client.screen.component.ActionButtons;
 import br.com.capfood.client.screen.component.CapBasePanel;
 import br.com.capfood.client.screen.component.GlobalOptionEntry;
-import br.com.capfood.client.screen.component.HoverOnlyButton;
 import br.com.capfood.config.CapFoodConfig;
-import net.minecraft.ChatFormatting;
 import net.minecraft.client.gui.GuiGraphicsExtractor;
 import net.minecraft.client.gui.screens.Screen;
 import net.minecraft.network.chat.Component;
@@ -14,10 +13,11 @@ public final class CapFoodGlobalOptionsScreen extends Screen {
 	private static final int SIDE_MARGIN = 16;
 	private static final int OPTIONS_TOP = 137;
 	private static final int OPTION_HEIGHT = 30;
-	private static final int BUTTON_GAP = 8;
 
 	private final Screen parent;
 	private final CapBasePanel basePanel = new CapBasePanel();
+	private GlobalOptionEntry consumeContainerEntry;
+	private GlobalOptionEntry showFoodPropertiesEntry;
 	private boolean consumeContainer;
 	private boolean showFoodProperties;
 	private Component status = Component.empty();
@@ -35,7 +35,7 @@ public final class CapFoodGlobalOptionsScreen extends Screen {
 		this.consumeContainer = CapFoodConfig.consumeContainer();
 		this.showFoodProperties = CapFoodConfig.showFoodProperties();
 
-		this.addRenderableWidget(new GlobalOptionEntry(
+		this.consumeContainerEntry = new GlobalOptionEntry(
 			left,
 			OPTIONS_TOP,
 			contentWidth,
@@ -44,8 +44,9 @@ public final class CapFoodGlobalOptionsScreen extends Screen {
 			Component.translatable("capfood.options.consume_container.description"),
 			this.consumeContainer,
 			selected -> this.consumeContainer = selected
-		));
-		this.addRenderableWidget(new GlobalOptionEntry(
+		);
+		this.addRenderableWidget(this.consumeContainerEntry);
+		this.showFoodPropertiesEntry = new GlobalOptionEntry(
 			left,
 			OPTIONS_TOP + OPTION_HEIGHT,
 			contentWidth,
@@ -54,26 +55,28 @@ public final class CapFoodGlobalOptionsScreen extends Screen {
 			Component.translatable("capfood.options.show_food_properties.description"),
 			this.showFoodProperties,
 			selected -> this.showFoodProperties = selected
-		));
+		);
+		this.addRenderableWidget(this.showFoodPropertiesEntry);
 
 		int buttonY = this.height - 36;
-		int buttonWidth = (contentWidth - BUTTON_GAP) / 2;
-		this.addRenderableWidget(new HoverOnlyButton(
+		ActionButtons actionButtons = new ActionButtons(
 			left,
 			buttonY,
-			buttonWidth,
-			20,
-			Component.translatable("capfood.action.back"),
-			button -> this.onClose()
-		));
-		this.addRenderableWidget(new HoverOnlyButton(
-			left + buttonWidth + BUTTON_GAP,
-			buttonY,
-			contentWidth - buttonWidth - BUTTON_GAP,
-			20,
-			accentedApplyLabel(),
-			button -> this.applyOptions()
-		));
+			contentWidth,
+			this::onClose,
+			() -> {
+			},
+			this::toggleAllOptions,
+			this::applyOptions,
+			true
+		);
+		actionButtons.addTo(this::addRenderableWidget);
+	}
+
+	private void toggleAllOptions() {
+		boolean selectAll = !(this.consumeContainer && this.showFoodProperties);
+		this.consumeContainerEntry.setSelected(selectAll);
+		this.showFoodPropertiesEntry.setSelected(selectAll);
 	}
 
 	private void applyOptions() {
@@ -104,12 +107,6 @@ public final class CapFoodGlobalOptionsScreen extends Screen {
 		if (!this.status.getString().isEmpty()) {
 			graphics.centeredText(this.font, this.status, this.width / 2, this.height - 49, this.statusColor);
 		}
-	}
-
-	private static Component accentedApplyLabel() {
-		return Component.empty()
-			.append(Component.literal("■ ").withStyle(ChatFormatting.GREEN))
-			.append(Component.translatable("capfood.action.apply"));
 	}
 
 	@Override
