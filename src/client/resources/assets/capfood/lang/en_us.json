@@ -29,5 +29,5 @@
   "capfood.status.save_failed": "Could not save the configuration.",
   "capfood.selected": "Selected",
   "capfood.not_selected": "Not selected",
-  "modmenu.descriptionTranslation.capfood": "Raise your favorite foods to steak level: 8 hunger, 12.8 saturation and a 1.6s consumption time."
+  "modmenu.descriptionTranslation.capfood": "Development:\nRiquinho — Project concept, direction, and development.\nDekuzinho — Implementation and development support.\nCodex — Development assistance and technical collaboration.\n\nTools:\nVSCode — Source code development.\nFigma — Interface design and prototyping.\nTrello — Project organization and management.\nGitHub — Code versioning and storage."
 }

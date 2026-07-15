@@ -3,8 +3,13 @@
   "id": "capfood",
   "version": "${version}",
   "name": "CAP FOOD",
-  "description": "Raise your favorite foods to steak level: 8 hunger, 12.8 saturation and a 1.6s consumption time.",
-  "authors": ["CAP FOOD"],
+  "description": "Development:\nRiquinho — Project concept, direction, and development.\nDekuzinho — Implementation and development support.\nCodex — Development assistance and technical collaboration.\n\nTools:\nVSCode — Source code development.\nFigma — Interface design and prototyping.\nTrello — Project organization and management.\nGitHub — Code versioning and storage.",
+  "authors": ["markusvdc"],
+  "contact": {
+    "homepage": "https://github.com/markusvdc/capfood",
+    "sources": "https://github.com/markusvdc/capfood",
+    "issues": "https://github.com/markusvdc/capfood/issues"
+  },
   "license": "MIT",
   "icon": "assets/capfood/icon.png",
   "environment": "client",
