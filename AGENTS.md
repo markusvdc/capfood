@@ -50,6 +50,21 @@ Depois de cada build bem-sucedido:
 
 Nunca remova, mova ou substitua outros mods dessas pastas.
 
+## Controle de versão
+
+- Não crie um commit a cada pedido ou ajuste feito durante a mesma entrega.
+- Pedidos como implementar uma funcionalidade, refiná-la, corrigi-la e ajustá-la continuam fazendo parte do mesmo conjunto de alterações enquanto mantiverem a mesma natureza.
+- Considere uma alteração estrutural pronta para commit somente quando ela estiver finalizada e validada conforme as regras deste projeto.
+- Detecte a fronteira entre entregas pelo contexto da conversa: quando o trabalho anterior estiver concluído e a nova solicitação iniciar uma implementação estrutural de outra natureza, faça o commit do trabalho anterior antes de começar o novo trabalho.
+- Uma simples mudança de assunto ou de arquivo não exige um novo commit. Avalie também o tamanho, a intenção e o caráter estrutural da solicitação.
+- Depois de um commit, pequenas correções, acabamentos e ajustes pontuais podem permanecer acumulados, mesmo quando afetarem áreas de naturezas diferentes.
+- Agrupe esses pequenos ajustes em um commit coerente quando houver material suficiente, quando uma nova implementação estrutural estiver prestes a começar ou quando o usuário solicitar um commit.
+- Não misture no mesmo commit uma nova alteração estrutural com outra já concluída.
+- Escreva as mensagens de commit sempre em inglês.
+- Mantenha as mensagens com aproximadamente 45 caracteres. Esse valor é uma referência de tamanho, não um limite máximo; priorize mensagens descritivas com comprimentos visualmente semelhantes.
+- Fazer um commit não autoriza um push.
+- Execute push somente quando o usuário solicitar explicitamente.
+
 ## Validação
 
 - Nunca abra o Minecraft ou qualquer instância para validar alterações.

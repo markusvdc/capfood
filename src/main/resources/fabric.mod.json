@@ -10,6 +10,16 @@
     "sources": "https://github.com/markusvdc/capfood",
     "issues": "https://github.com/markusvdc/capfood/issues"
   },
+  "custom": {
+    "modmenu": {
+      "links": {
+        "capfood.link.pinterest": "https://pinterest.com/markusvdc/",
+        "capfood.link.github": "https://github.com/markusvdc/",
+        "capfood.link.medium": "https://markusvdc.medium.com/",
+        "capfood.link.instagram": "https://www.instagram.com/markusvdc/"
+      }
+    }
+  },
   "license": "MIT",
   "icon": "assets/capfood/icon.png",
   "environment": "client",

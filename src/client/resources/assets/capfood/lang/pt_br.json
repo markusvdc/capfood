@@ -29,5 +29,10 @@
   "capfood.status.save_failed": "Não foi possível salvar a configuração.",
   "capfood.selected": "Selecionado",
   "capfood.not_selected": "Não selecionado",
+  "capfood.link.pinterest": "Pinterest",
+  "capfood.link.github": "GitHub",
+  "capfood.link.medium": "Medium",
+  "capfood.link.instagram": "Instagram",
+  "modmenu.summaryTranslation.capfood": "Eleve seus alimentos favoritos ao nível do filé.",
   "modmenu.descriptionTranslation.capfood": "Desenvolvimento:\nRiquinho — Conceito, direção e desenvolvimento do projeto.\nDekuzinho — Implementação e suporte no desenvolvimento.\nCodex — Assistência de desenvolvimento e colaboração técnica.\n\nFerramentas:\nVSCode — Desenvolvimento do código-fonte.\nFigma — Design e prototipação de interface.\nTrello — Organização e gerenciamento do projeto.\nGitHub — Versionamento e armazenamento do código."
 }
