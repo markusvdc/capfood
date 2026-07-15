@@ -1,0 +1,32 @@
+{
+  "schemaVersion": 1,
+  "id": "capfood",
+  "version": "${version}",
+  "name": "CAP FOOD",
+  "description": "Raise your favorite foods to steak level: 8 hunger, 12.8 saturation and a 1.6s consumption time.",
+  "authors": ["CAP FOOD"],
+  "license": "MIT",
+  "icon": "assets/capfood/icon.png",
+  "environment": "client",
+  "entrypoints": {
+    "main": [
+      "br.com.capfood.CapFood"
+    ],
+    "client": [
+      "br.com.capfood.client.CapFoodClient"
+    ],
+    "modmenu": [
+      "br.com.capfood.client.CapFoodModMenuIntegration"
+    ]
+  },
+  "mixins": [
+    "capfood.mixins.json"
+  ],
+  "depends": {
+    "fabricloader": ">=0.19.3",
+    "fabric-api": "*",
+    "minecraft": "~26.2",
+    "java": ">=25",
+    "modmenu": ">=20.0.1"
+  }
+}
