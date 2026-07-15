@@ -50,6 +50,11 @@ Depois de cada build bem-sucedido:
 
 Nunca remova, mova ou substitua outros mods dessas pastas.
 
+## Documentação pública
+
+- O `README.md` deve ser escrito em inglês por padrão.
+- Preserve o inglês nas futuras alterações do README, salvo quando o usuário solicitar explicitamente outro idioma.
+
 ## Controle de versão
 
 - Não crie um commit a cada pedido ou ajuste feito durante a mesma entrega.

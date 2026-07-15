@@ -1,84 +1,80 @@
 # CAP FOOD
 
-![Ícone do CAP FOOD](docs/images/cap-food-icon.png)
+![CAP FOOD icon](docs/images/cap-food-icon.png)
 
-Eleve seus alimentos favoritos ao nível do filé.
+Raise your favorite foods to steak level.
 
-O **CAP FOOD** permite escolher quais alimentos passam a usar o padrão CAP:
+**CAP FOOD** lets you choose which foods use the CAP standard:
 
-- **Fome:** 8 pontos — 4 coxinhas
-- **Saturação:** 12.8
-- **Velocidade de consumo:** 1.6 segundo
+- **Hunger:** 8 points — 4 drumsticks
+- **Saturation:** 12.8
+- **Speed:** 1.6 seconds
 
-As escolhas são feitas por uma interface simples, integrada ao **Mod Menu**, e permanecem salvas entre as sessões.
+Your choices are made through a simple interface integrated with **Mod Menu** and remain saved between sessions.
 
-Na primeira instalação, todos os alimentos começam selecionados para receber o CAP e as opções globais permanecem desativadas.
+On the first installation, all supported foods start selected to receive CAP while all global options remain disabled.
 
-## Alimentos disponíveis para CAP
+## Foods available for CAP
 
-### Carnes
+### Meats
 
-- Bacalhau assado
-- Costela de porco assada
-- Carneiro assado
-- Coelho assado
-- Frango assado
-- Salmão assado
+- Cooked Cod
+- Cooked Porkchop
+- Cooked Mutton
+- Cooked Rabbit
+- Cooked Chicken
+- Cooked Salmon
 
-### Pratos
+### Dishes
 
-- Ensopado de cogumelos
-- Ensopado de coelho
-- Ensopado de beterraba
+- Mushroom Stew
+- Rabbit Stew
+- Beetroot Soup
 
-### Outros
+### Others
 
-- Batata assada
-- Biscoito
-- Bolo
-- Frasco de mel
-- Maçã
-- Pão
-- Torta de abóbora
+- Baked Potato
+- Cookie
+- Cake
+- Honey Bottle
+- Apple
+- Bread
+- Pumpkin Pie
 
 ## Interface
 
-![Seleção de alimentos do CAP FOOD](docs/images/cap-food-selection.png)
+![CAP FOOD food selection](docs/images/cap-food-selection.png)
 
-![Opções globais do CAP FOOD](docs/images/cap-food-options.png)
+![CAP FOOD global options](docs/images/cap-food-options.png)
 
-## Recursos
+## Features
 
-- 16 alimentos compatíveis, organizados por categoria.
-- Aplicação individual do padrão CAP.
-- Opção global para mostrar, ao segurar `Shift`, os valores efetivos de fome, saturação e velocidade no tooltip dos alimentos compatíveis e do filé.
-- Suporte ao bolo no inventário e às fatias consumidas no chão.
-- Opção global para consumir recipientes retornáveis dos alimentos permitidos, incluindo tigelas e frascos.
-- Seleção ou remoção de todos os alimentos com um único botão.
-- Configuração salva automaticamente ao aplicar.
-- Interface em português e inglês.
+- 16 supported foods organized by category.
+- Individual application of the CAP standard.
+- Global option to show the effective hunger, saturation, and speed values by holding `Shift` over supported foods and steak.
+- Support for cake in the inventory and slices eaten after it is placed.
+- Global option to consume returned containers from supported foods, including bowls and bottles.
+- Select or clear all foods with a single button.
+- Configuration saved automatically when applied.
+- Interface available in Portuguese and English.
 
-## Requisitos
+## Requirements
 
 - Minecraft **26.2**
-- Java **25** ou superior
-- Fabric Loader **0.19.3** ou superior
+- Java **25** or newer
+- Fabric Loader **0.19.3** or newer
 - Fabric API
-- Mod Menu **20.0.1** ou superior — dependência obrigatória
+- Mod Menu **20.0.1** or newer — required dependency
 
-## Instalação
+## Installation
 
-1. Instale o Fabric Loader, o Fabric API e o Mod Menu nas versões compatíveis.
-2. Coloque o arquivo `.jar` do CAP FOOD na pasta `mods` da instância.
-3. Abra **Mods → CAP FOOD**.
-4. Marque os alimentos desejados e selecione **APLICAR**.
+1. Install compatible versions of Fabric Loader, Fabric API, and Mod Menu.
+2. Place the CAP FOOD `.jar` file in the instance's `mods` folder.
+3. Open **Mods → CAP FOOD**.
+4. Select the foods you want and choose **APPLY**.
 
-## Compatibilidade
+## Compatibility
 
-O CAP FOOD é um mod **client-side focado em mundos singleplayer**. No singleplayer, o servidor integrado do Minecraft aplica normalmente as alterações.
+CAP FOOD is a **client-side mod focused on singleplayer worlds**. In singleplayer, Minecraft's integrated server applies the changes normally.
 
-Em servidores multiplayer externos, fome e saturação são controladas pelo servidor. Por isso, a instalação apenas no cliente não altera os valores reais dos alimentos nesse ambiente.
-
-## Licença
-
-Distribuído sob a licença MIT.
+On external multiplayer servers, hunger and saturation are controlled by the server. Installing CAP FOOD only on the client does not change the foods' effective values in that environment.
