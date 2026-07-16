@@ -1,23 +1,22 @@
 # CAP FOOD
+Eleve seus alimentos favoritos ao nível do filé. O CAP FOOD permite escolher quais alimentos compatíveis recebem um padrão compartilhado de 8 pontos de fome, 12,8 de saturação e uma velocidade de consumo de 1,6 segundo. Sua interface limpa, em estilo vanilla, é integrada ao Mod Menu, organiza os alimentos por categoria e mantém todas as escolhas salvas entre as sessões, **tornando a experiência fácil de configurar sem mudar a essência do Minecraft**.
 
-Raise your favorite foods to steak level. CAP FOOD lets you choose which supported foods receive a shared standard of 8 hunger points, 12.8 saturation, and a 1.6-second eating speed. Its clean, vanilla-style interface is integrated with Mod Menu, organizes foods by category, and keeps every choice saved between sessions, **making the experience easy to configure without changing how Minecraft feels**.
+O CAP FOOD existe para fazer com que **a escolha dos alimentos seja uma questão de preferência, não de eficiência**. Quando o filé é simplesmente mais forte, muitos alimentos cheios de personalidade acabam deixados de lado — não porque os jogadores não gostem deles, mas porque escolhê-los traz uma desvantagem. Queríamos que frango assado, frascos de mel, ensopados e outros alimentos pouco aproveitados fossem opções realmente viáveis, **dando um novo propósito a itens familiares e trazendo mais variedade e vida** à sobrevivência cotidiana.
 
-CAP FOOD exists to make **food choice about preference instead of efficiency**. When steak is simply stronger, many charming foods are left behind—not because players dislike them, but because choosing them comes with a disadvantage. We wanted cooked chicken, honey bottles, stews, and other overlooked foods to feel genuinely viable, **giving familiar items new purpose while bringing more variety and life** to everyday survival.
+![Seleção de alimentos do CAP FOOD](docs/images/capfood-alimentos.png)
 
-![CAP FOOD food selection](docs/images/capfood-selection.png)
-
-## Foods available to improve
-
-| Category | Foods |
+## Alimentos disponíveis para aprimorar
+|  |  |
 | --- | --- |
-| Meats | Cooked Cod, Cooked Porkchop, Cooked Mutton, Cooked Rabbit, Cooked Chicken, and Cooked Salmon. |
-| Dishes | Mushroom Stew, Rabbit Stew, and Beetroot Soup. |
-| Others | Baked Potato, Cookie, Cake, Honey Bottle, Apple, Bread, and Pumpkin Pie. |
+| Carnes | Bacalhau assado, Costeleta de porco assada, Carneiro assado, Coelho assado, Frango assado e Salmão assado. |
+| Pratos | Ensopado de cogumelos, Ensopado de coelho e Sopa de beterraba. |
+| Outros | Batata assada, Biscoito, Bolo, Frasco de mel, Maçã, Pão e Torta de abóbora. |
 
-## Features built for gameplay
-
-| Selection and configuration | Gameplay support |
+## Recursos criados para gameplay
+|  |  |
 | --- | --- |
-| Apply CAP individually or toggle all 16 foods at once. | Hold Shift to inspect effective hunger, saturation, and speed values. |
-| Configure global options and save changes when applied. | Apply CAP to cake in the inventory and to slices eaten after placement. |
-| Use the interface in Portuguese or English. | Optionally consume returned containers, including bowls and bottles. |
+| Variedade | Entre 16 opções disponíveis, escolha quais alimentos você deseja aprimorar. |
+| Propriedades | Segure Shift para consultar os valores efetivos de fome, saturação e velocidade. |
+| Bolo | Aplique o CAP ao bolo no inventário e às fatias comidas depois de colocado. |
+| Recipientes | Opcionalmente, consuma os recipientes devolvidos, incluindo tigelas e frascos. |
+| Idioma | Use a interface em português ou inglês. |

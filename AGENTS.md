@@ -52,8 +52,7 @@ Nunca remova, mova ou substitua outros mods dessas pastas.
 
 ## Documentação pública
 
-- O `README.md` deve ser escrito em inglês por padrão.
-- Preserve o inglês nas futuras alterações do README, salvo quando o usuário solicitar explicitamente outro idioma.
+**O DEKUZINHO NÃO ESTÁ AUTORIZADO, SOB NENHUMA CIRCUNSTÂNCIA, A CRIAR, EDITAR, RENOMEAR, MOVER OU EXCLUIR ARQUIVOS DE DOCUMENTAÇÃO DO MOD, INCLUINDO `README.md` E ARQUIVOS SEMELHANTES.**
 
 ## Controle de versão
 
