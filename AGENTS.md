@@ -57,18 +57,44 @@ Nunca remova, mova ou substitua outros mods dessas pastas.
 
 ## Controle de versão
 
-- Não crie um commit a cada pedido ou ajuste feito durante a mesma entrega.
-- Pedidos como implementar uma funcionalidade, refiná-la, corrigi-la e ajustá-la continuam fazendo parte do mesmo conjunto de alterações enquanto mantiverem a mesma natureza.
-- Considere uma alteração estrutural pronta para commit somente quando ela estiver finalizada e validada conforme as regras deste projeto.
-- Detecte a fronteira entre entregas pelo contexto da conversa: quando o trabalho anterior estiver concluído e a nova solicitação iniciar uma implementação estrutural de outra natureza, faça o commit do trabalho anterior antes de começar o novo trabalho.
-- Uma simples mudança de assunto ou de arquivo não exige um novo commit. Avalie também o tamanho, a intenção e o caráter estrutural da solicitação.
-- Depois de um commit, pequenas correções, acabamentos e ajustes pontuais podem permanecer acumulados, mesmo quando afetarem áreas de naturezas diferentes.
-- Agrupe esses pequenos ajustes em um commit coerente quando houver material suficiente, quando uma nova implementação estrutural estiver prestes a começar ou quando o usuário solicitar um commit.
-- Não misture no mesmo commit uma nova alteração estrutural com outra já concluída.
+- Agrupe implementação, refinamentos, correções e acabamentos da mesma entrega em um único commit.
+- Considere uma entrega estrutural pronta somente depois de finalizada e validada conforme as regras do projeto.
+- Antes de iniciar uma nova implementação estrutural de outra natureza, faça o commit da entrega anterior já concluída.
+- Uma simples mudança de assunto ou arquivo não cria, por si só, uma fronteira entre commits; avalie intenção, tamanho e caráter estrutural.
+- Pequenos ajustes feitos depois de um commit podem permanecer acumulados até formarem um conjunto coerente, antecederem uma nova entrega estrutural ou o usuário solicitar um commit.
+- Não misture uma nova entrega estrutural com outra já concluída e ainda não registrada.
 - Escreva as mensagens de commit sempre em inglês.
 - Mantenha as mensagens com aproximadamente 45 caracteres. Esse valor é uma referência de tamanho, não um limite máximo; priorize mensagens descritivas com comprimentos visualmente semelhantes.
 - Fazer um commit não autoriza um push.
 - Execute push somente quando o usuário solicitar explicitamente.
+
+### Releases no GitHub
+
+- Crie toda Release inicialmente como rascunho e publique somente após autorização explícita do usuário.
+- Use a tag `v<versão>` e anexe o JAR `capfood-<versão>.jar`.
+- Atualize no texto as versões de Minecraft, Fabric Loader, Fabric API e Mod Menu correspondentes à Release.
+
+#### Título
+
+- Escreva em inglês no formato `<emoji> <título temático>`.
+- Represente a identidade ou a principal mudança da versão em aproximadamente 30 caracteres.
+- Não inclua `CAP FOOD` nem o número da versão; essas informações já aparecem no repositório e na tag.
+- Referência: `👽 Bringing Variety to Life` — 27 caracteres.
+
+#### Descrição
+
+- Escreva em inglês, como uma única estrofe com aproximadamente 440 caracteres e sem negrito.
+- Depois da estrofe, insira uma linha horizontal e somente as duas linhas técnicas do modelo abaixo.
+- Referência: a descrição da Release `v1.3.0` possui 435 caracteres.
+
+```markdown
+<descrição da versão em uma única estrofe>
+
+---
+
+**Compatibility:** Minecraft 26.2 / [Fabric Loader 0.19.3+](https://fabricmc.net/use/installer/)
+**Dependencies:** [Fabric API 0.154.2+26.2](https://modrinth.com/mod/fabric-api) / [Mod Menu 20.0.1+](https://modrinth.com/mod/modmenu)
+```
 
 ## Validação
 

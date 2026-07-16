@@ -6,18 +6,18 @@ CAP FOOD exists to make **food choice about preference instead of efficiency**. 
 
 ![CAP FOOD food selection](docs/images/capfood-selection.png)
 
-## Foods available for CAP
+## Foods available to improve
 
-**Meats:** Cooked Cod, Cooked Porkchop, Cooked Mutton, Cooked Rabbit, Cooked Chicken, and Cooked Salmon.
-
-**Dishes:** Mushroom Stew, Rabbit Stew, and Beetroot Soup.
-
-**Others:** Baked Potato, Cookie, Cake, Honey Bottle, Apple, Bread, and Pumpkin Pie.
+| Category | Foods |
+| --- | --- |
+| Meats | Cooked Cod, Cooked Porkchop, Cooked Mutton, Cooked Rabbit, Cooked Chicken, and Cooked Salmon. |
+| Dishes | Mushroom Stew, Rabbit Stew, and Beetroot Soup. |
+| Others | Baked Potato, Cookie, Cake, Honey Bottle, Apple, Bread, and Pumpkin Pie. |
 
 ## Features built for gameplay
 
 | Selection and configuration | Gameplay support |
 | --- | --- |
-| Apply CAP individually or toggle all 16 foods at once. | Hold `Shift` to inspect effective hunger, saturation, and speed values. |
+| Apply CAP individually or toggle all 16 foods at once. | Hold Shift to inspect effective hunger, saturation, and speed values. |
 | Configure global options and save changes when applied. | Apply CAP to cake in the inventory and to slices eaten after placement. |
 | Use the interface in Portuguese or English. | Optionally consume returned containers, including bowls and bottles. |
