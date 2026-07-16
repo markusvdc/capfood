@@ -43,10 +43,10 @@ Depois de cada build bem-sucedido:
    - `D:\MARKUS\GAMES\minecraft\instances\NEBULOSA5\minecraft\mods`
 2. Resolva e valide que cada destino corresponde exatamente a uma dessas duas pastas autorizadas.
 3. Localize em cada pasta somente arquivos que correspondam a:
-   `cap-food-*.jar`
+   `capfood-*.jar` ou ao padrão legado `cap-food-*.jar`
 4. Remova somente esses JARs antigos do CAP FOOD.
 5. Copie o novo JAR de `build\libs` para as duas pastas de mods.
-6. Confirme que existe exatamente um `cap-food-*.jar` em cada destino e que ambos correspondem à versão recém-compilada.
+6. Confirme que existe exatamente um `capfood-*.jar` em cada destino, nenhum JAR legado `cap-food-*.jar` e que ambos correspondem à versão recém-compilada.
 
 Nunca remova, mova ou substitua outros mods dessas pastas.
 

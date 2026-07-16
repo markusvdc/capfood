@@ -4,7 +4,7 @@ Raise your favorite foods to steak level. CAP FOOD lets you choose which support
 
 CAP FOOD exists to make **food choice about preference instead of efficiency**. When steak is simply stronger, many charming foods are left behind—not because players dislike them, but because choosing them comes with a disadvantage. We wanted cooked chicken, honey bottles, stews, and other overlooked foods to feel genuinely viable, **giving familiar items new purpose while bringing more variety and life** to everyday survival.
 
-![CAP FOOD food selection](docs/images/cap-food-selection.png)
+![CAP FOOD food selection](docs/images/capfood-selection.png)
 
 ## Foods available for CAP
 
