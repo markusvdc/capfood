@@ -19,9 +19,11 @@ public final class CapFoodGlobalOptionsScreen extends Screen {
 	private GlobalOptionEntry consumeContainerEntry;
 	private GlobalOptionEntry showFoodPropertiesEntry;
 	private GlobalOptionEntry preventRottenFleshWolfFeedingEntry;
+	private GlobalOptionEntry preventPrimaryFoodConsumptionEntry;
 	private boolean consumeContainer;
 	private boolean showFoodProperties;
 	private boolean preventRottenFleshWolfFeeding;
+	private boolean preventPrimaryFoodConsumption;
 	private Component status = Component.empty();
 	private int statusColor = 0xFF9CD67A;
 
@@ -37,6 +39,7 @@ public final class CapFoodGlobalOptionsScreen extends Screen {
 		this.consumeContainer = CapFoodConfig.consumeContainer();
 		this.showFoodProperties = CapFoodConfig.showFoodProperties();
 		this.preventRottenFleshWolfFeeding = CapFoodConfig.preventRottenFleshWolfFeeding();
+		this.preventPrimaryFoodConsumption = CapFoodConfig.preventPrimaryFoodConsumption();
 
 		this.consumeContainerEntry = new GlobalOptionEntry(
 			left,
@@ -71,6 +74,17 @@ public final class CapFoodGlobalOptionsScreen extends Screen {
 			selected -> this.preventRottenFleshWolfFeeding = selected
 		);
 		this.addRenderableWidget(this.preventRottenFleshWolfFeedingEntry);
+		this.preventPrimaryFoodConsumptionEntry = new GlobalOptionEntry(
+			left,
+			OPTIONS_TOP + OPTION_HEIGHT * 3,
+			contentWidth,
+			OPTION_HEIGHT,
+			Component.translatable("capfood.options.prevent_primary_food_consumption"),
+			Component.translatable("capfood.options.prevent_primary_food_consumption.description"),
+			this.preventPrimaryFoodConsumption,
+			selected -> this.preventPrimaryFoodConsumption = selected
+		);
+		this.addRenderableWidget(this.preventPrimaryFoodConsumptionEntry);
 
 		int buttonY = this.height - 36;
 		ActionButtons actionButtons = new ActionButtons(
@@ -88,17 +102,24 @@ public final class CapFoodGlobalOptionsScreen extends Screen {
 	}
 
 	private void toggleAllOptions() {
-		boolean selectAll = !(this.consumeContainer && this.showFoodProperties && this.preventRottenFleshWolfFeeding);
+		boolean selectAll = !(
+			this.consumeContainer
+				&& this.showFoodProperties
+				&& this.preventRottenFleshWolfFeeding
+				&& this.preventPrimaryFoodConsumption
+		);
 		this.consumeContainerEntry.setSelected(selectAll);
 		this.showFoodPropertiesEntry.setSelected(selectAll);
 		this.preventRottenFleshWolfFeedingEntry.setSelected(selectAll);
+		this.preventPrimaryFoodConsumptionEntry.setSelected(selectAll);
 	}
 
 	private void applyOptions() {
 		boolean saved = CapFoodConfig.saveGlobalOptions(
 			this.consumeContainer,
 			this.showFoodProperties,
-			this.preventRottenFleshWolfFeeding
+			this.preventRottenFleshWolfFeeding,
+			this.preventPrimaryFoodConsumption
 		);
 		this.status = Component.translatable(saved ? "capfood.options.status.applied" : "capfood.status.save_failed");
 		this.statusColor = saved ? 0xFF9CD67A : 0xFFFF6B6B;
