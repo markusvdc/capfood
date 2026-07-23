@@ -5,7 +5,8 @@
   "mixins": [
     "CakeBlockMixin",
     "ConsumableMixin",
-    "DataComponentHolderMixin"
+    "DataComponentHolderMixin",
+    "WolfMixin"
   ],
   "injectors": {
     "defaultRequire": 1

@@ -24,6 +24,8 @@
   "capfood.options.consume_container.description": "When consuming food with a container, the container is consumed too.",
   "capfood.options.show_food_properties": "SHOW PROPERTIES",
   "capfood.options.show_food_properties.description": "Hold Shift over a compatible food to show hunger, saturation and speed.",
+  "capfood.options.prevent_rotten_flesh_wolf_feeding": "PROTECT WOLVES",
+  "capfood.options.prevent_rotten_flesh_wolf_feeding.description": "Prevents wolves from being fed rotten flesh.",
   "capfood.options.status.applied": "Global options applied.",
   "capfood.status.applied": "CAP applied to the selected foods.",
   "capfood.status.save_failed": "Could not save the configuration.",
