@@ -6,6 +6,7 @@
     "CakeBlockMixin",
     "ConsumableMixin",
     "DataComponentHolderMixin",
+    "InventoryProfilesItemTypeMixin",
     "WolfMixin"
   ],
   "injectors": {

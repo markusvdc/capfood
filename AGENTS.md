@@ -38,15 +38,14 @@ Quando a alteração afetar código, recursos do mod, configuração de build ou
 
 Depois de cada build bem-sucedido:
 
-1. Faça o deploy nas duas instâncias abaixo:
-   - `D:\MARKUS\GAMES\minecraft\instances\MODIFICA2\minecraft\mods`
-   - `D:\MARKUS\GAMES\minecraft\instances\NEBULOSA5\minecraft\mods`
-2. Resolva e valide que cada destino corresponde exatamente a uma dessas duas pastas autorizadas.
-3. Localize em cada pasta somente arquivos que correspondam a:
+1. Faça o deploy na instância abaixo:
+   - `D:\MARKUS\GAMES\minecraft\instances\NEBULOSA6\minecraft\mods`
+2. Resolva e valide que o destino corresponde exatamente a essa pasta autorizada.
+3. Localize nessa pasta somente arquivos que correspondam a:
    `capfood-*.jar` ou ao padrão legado `cap-food-*.jar`
 4. Remova somente esses JARs antigos do CAP FOOD.
-5. Copie o novo JAR de `build\libs` para as duas pastas de mods.
-6. Confirme que existe exatamente um `capfood-*.jar` em cada destino, nenhum JAR legado `cap-food-*.jar` e que ambos correspondem à versão recém-compilada.
+5. Copie o novo JAR de `build\libs` para a pasta de mods.
+6. Confirme que existe exatamente um `capfood-*.jar` no destino, nenhum JAR legado `cap-food-*.jar` e que ele corresponde à versão recém-compilada.
 
 Nunca remova, mova ou substitua outros mods dessas pastas.
 
